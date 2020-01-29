@@ -1,4 +1,11 @@
-﻿using System;
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=ReplaceString.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shivam Dewangan"/>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 
