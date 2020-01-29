@@ -1,4 +1,10 @@
-﻿using System;
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="BinarySwapNibble.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shivam Dewangan"/>
+// --------------------------------------------------------------------------------------------------------------------﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,8 +14,7 @@ namespace BasicProgramming.JUnitTesting
     {
         public static int SwapNibble(int x)
         {
-            return ((x & 0x0F) << 4 |
-            (x & 0xF0) >> 4);
+            return ((4 << x) | (x >> 4));
         }
     }
 }
