@@ -1,4 +1,11 @@
-﻿using System;
+// --------------------------------------------------------------------------------------------------------------------
+// <copyright file=FlipCoin.cs" company="Bridgelabz">
+//   Copyright © 2019 Company="BridgeLabz"
+// </copyright>
+// <creator name="Shivam Dewangan"/>
+// --------------------------------------------------------------------------------------------------------------------
+﻿
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,6 +16,7 @@ namespace BasicProgramming
         public static void flipCoin()
         {
             int head = 0, Tail = 0;
+            //Random Object Created
             Random r = new Random();
             Console.WriteLine("Enter No. of time To flip a coin");
             int n = Utility.readInt();
