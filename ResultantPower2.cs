@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="Resultantof2.cs" company="Bridgelabz">
-//   Copyright © 2019 Company="BridgeLabz"
+//   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Shivam Dewangan"/>
 // --------------------------------------------------------------------------------------------------------------------﻿
@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ProgrammingCsharp.JUnitTesting
+namespace Programmings
 {
     class ResultantPower2
     {
