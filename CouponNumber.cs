@@ -4,43 +4,38 @@
 // </copyright>
 // <creator name="Shivam Dewangan"/>
 // --------------------------------------------------------------------------------------------------------------------
-
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BasicProgramming
+namespace Programmings
 {
     class CouponNumber
     {
         public static void couponNumber()
         {
-			/*
-	 * char array to get characters for coupen
-	 */
-			char[] chars = "abcdefghijklmnop".ToCharArray();
-			/*
-			 * length of coupen
-			 */
-			int max = 100000000;
-			/*
-			 * random value
-			 */
-			Random random1 = new Random();
-			double d = random1.NextDouble();
-			int random = (int)(d * max);
-			String sb = "";
-			Console.WriteLine("random double " + d + " random at start " + random);
-
-			while (random > 0)
-			{
-				sb = sb + (chars[random % chars.Length]);
-				random /= chars.Length;
-				Console.WriteLine(random + "  " + random % chars.Length + " sb is " + sb);
-			}
-
-			String couponCode = sb.ToString();
-			Console.WriteLine(value: "Coupon Code: " + couponCode);
-		}
-	}
+            //Created a Random object
+            Random r = new Random();
+            string couponNo = "";
+            int Count = 0;
+            Console.WriteLine("Enter length of Coupon Number: ");
+            int N = Utility.readInt();
+            for (int i = 0; i < N; i++)
+            {
+                int ran = r.Next(0, 10);
+                Count += 1;
+                if (couponNo.Contains(ran.ToString()))
+                {
+                    i -= 1;
+                }
+                else
+                {
+                    couponNo += ran;
+                }
+                Console.WriteLine("Total Randoms needed:" + Count);
+                Console.WriteLine("Coupon Code: " + couponNo);
+            }
+        }
+    }
 }
+
