@@ -1,9 +1,10 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="DayOfWeek.cs" company="Bridgelabz">
-//   Copyright © 2019 Company="BridgeLabz"
+//   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Shivam Dewangan"/>
 // --------------------------------------------------------------------------------------------------------------------
+using Programmings;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,60 +13,21 @@ namespace BasicProgramming.JUnitTesting
 {
     class DayOfWeek
     {
-        public class Calender2DArray
+        public static void checkday()
         {
-            static int[,] Calender = new int[5, 7];
-            static int[] month = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
-
-            public static void initCal()
-            {
-                for(int i =0; i<Calender.Length; i++)
-                {
-                    for (int j = 0; j < Calender.Length-1; j++)
-                    {
-                        Calender[i, j] = -10;
-                    }
-                }
-            }
-            public static void display(int m)
-            {
-                Console.WriteLine("Sun Mon Tue Wed Thru Fri Sat");
-                for(int i = 0; i<Calender.Length; i++)
-                {
-                    for(int j =0; j<Calender.Length-1; j++)
-                    {
-                        if(Calender[i, j] < 0 || Calender[i, j] > month[m - 1])
-                        {
-                            Console.WriteLine(" \t ");
-                        }
-                    }
-                }
-            }
-            public static void putCalender(int day)
-            {
-                int d1 = 1;
-                for(int i =d1; i<Calender.Length; i++)
-                {
-                    Calender[0, i] = d1++;
-                }
-                for(int i =1; i<Calender.Length; i++)
-                {
-                    for(int j = 0; j<Calender.Length-1; j++)
-                    {
-                        Calender[i, j] = d1++;
-                    }
-                }
-            }
-           
+            Console.WriteLine("Enter date :");
+            int d = Utility.readInt();
+            Console.WriteLine("Enter Month Number :");
+            int m = Utility.readInt();
+            Console.WriteLine("Enter year :");
+            int y = Utility.readInt();
+            string[] month = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+            string[] Day = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday" };
+            int y0 = y - (14 - m) / 12;
+            int x = y0 + (y0 / 4) - (y0 / 100) + (y0 / 400);
+            int m0 = m + 12 * ((14 - m) / 12) - 2;
+            int d0 = (d + x + 31 * m0 / 12) % 7;
+            Console.WriteLine("It's " + Day[d0] + " on " + d + " " + month[m - 1] + ", " + y);
         }
-        public static int dayOfWeek(int month, int day, int year)
-        {
-            int d = 1;
-            int y = year - (14 - month) / 12;
-            int x = y + y / 4 - y / 100 + y / 400;
-            int m = month + 12 * ((14 - month) / 12) - 2;
-            int d1 = (day + x + (31 * m) / 12) % 7;
-            return d1;
-        }       
     }
 }
