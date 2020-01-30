@@ -4,12 +4,11 @@
 // </copyright>
 // <creator name="Shivam Dewangan"/>
 // --------------------------------------------------------------------------------------------------------------------
-using Programmings;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BasicProgramming.JUnitTesting
+namespace Programmings
 {
     class DayOfWeek
     {
