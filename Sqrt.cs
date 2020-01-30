@@ -1,15 +1,14 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="SquareRoot.cs" company="Bridgelabz">
-//   Copyright © 2019 Company="BridgeLabz"
+//   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
 // <creator name="Shivam Dewangan"/>
 // --------------------------------------------------------------------------------------------------------------------
-using ProgrammingCsharp;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BasicProgramming.JUnitTesting
+namespace Programmings
 {
     class Sqrt
     {
