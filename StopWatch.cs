@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Threading;
 
-namespace BasicProgramming
+namespace Programmings
 {
     class StopWatch
     {
