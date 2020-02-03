@@ -1,4 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------
 // <copyright file=Programming.cs" company="Bridgelabz">
 //   Copyright © 2020 Company="BridgeLabz"
 // </copyright>
@@ -16,8 +16,9 @@ namespace Programmings
             Console.WriteLine(" 1. Replace String \n 2. FlipCoin \n 3. LeapYear \n 4. PowerOf2 \n 5. HarmonicNo." +
               " \n 6. PrimeFactor \n 7. WindChill Temperature \n 8. Euclidean distance \n 9. QuadraticEquation " +
               "\n 10. FindTriplets \n 11. Gambler \n 12. 2DArray \n 13. CouponNumber \n 14. StopWatch \n 15. TicTaeToe" +
-              "\n 16. Vending Machine \n 17.Day of week \n 18.TemperatureConversion \n 19. MonthlyPayment \n 20. SquareRoot" +
-              "\n 21. BinaryConversion \n 22.SwapNibbles \n 23.ResultantNo is Power of two \n 24.BinarySearch");
+              "\n 16. Vending Machine \n 17. Day of week \n 18. TemperatureConversion \n 19. MonthlyPayment \n 20. SquareRoot" +
+              "\n 21. BinaryConversion \n 22. SwapNibbles \n 23. ResultantNo is Power of two \n 24. BinarySearch \n 25. BubbleSort" +
+              "\n 26. Insertion Sort \n 27. Merge Sort \n 28. Anagram \n 29. Prime btw 1-1000 \n 30. Permutation Recursive \n 31. Permutation Iterartion ");
             int option = Utility.readInt();
 
             switch (option)
@@ -195,7 +196,6 @@ namespace Programmings
                     break;
             }
         }
-
-
     }
 }
+
