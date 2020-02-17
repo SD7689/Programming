@@ -4,8 +4,8 @@ FirstName()
 {
 echo "---------Enter your FirstName---------"
 read first
-re="^[A-Za-z]*$"
-	if [[ $first =~ $re ]];
+	rFirst="^[A-Za-z]*$"
+	if [[ $first =~ $rFirst ]];
 	then
 		echo "Valid Name"
 	else
@@ -19,8 +19,8 @@ LastName()
 {
 echo "---------Enter your LastName----------"
 read Last
-	re="^[A-Za-z]*$"
-	if [[ $Last =~ $re ]];
+	rlast="^[A-Za-z]*$"
+	if [[ $Last =~ $rlast ]];
 	then
         	echo "Valid Name"
 	else
@@ -34,8 +34,8 @@ Email()
 {
 echo "-------Enter your Email Address-------"
 read email
-	re="^([A-Za-z0-9_\-\+]+)@"
-	if [[ $email =~ $re ]];
+	remail="^([A-Za-z0-9_\-\+]+)@"
+	if [[ $email =~ $remail ]];
 	then
         	echo "Valid Email Id"
 	else
@@ -49,8 +49,8 @@ Password()
 {
 echo "---------Enter your Password----------"
 read password
-	e="^([A-Za-z0-9_\-\.\+]+)@"
-	if [[ $password =~ $e ]];
+	rpass="^([A-Za-z0-9_\-\.\+]+)"
+	if [[ $password =~ $rpass ]];
 	then
         	echo "Valid Password"
 	else
@@ -64,8 +64,8 @@ MobileNo()
 {
 echo "--------Enter Your Mobile No.---------"
 read Num
-	r="^[0-9]*$"
-	if [[ $Num =~ $r ]];
+	rNo="^[0-9]{10}$"
+	if [[ $Num =~ $rNo ]];
 	then
 		echo "Valid Mobile No."
 	else
